@@ -17,20 +17,20 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Orange primary from GoExpedi */
-    --primary: 16 100% 66%;
+    /* Blue primary for tech-forward B2B */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 16 100% 75%;
+    --primary-glow: 217 91% 70%;
 
-    /* Deep slate for professional B2B feel */
-    --secondary: 215 25% 27%;
+    /* Deep blue for professional B2B feel */
+    --secondary: 215 30% 25%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215 16% 47%;
 
-    /* Cyan accent for tech elements */
-    --accent: 189 95% 42%;
+    /* Light blue accent for tech elements */
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,12 +43,12 @@ All colors MUST be HSL.
     --radius: 0.5rem;
     
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(16 100% 66%), hsl(16 100% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 15% / 0.95), hsl(215 25% 27% / 0.92));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 30% 15% / 0.95), hsl(215 30% 25% / 0.92));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 98%));
     
-    --shadow-elegant: 0 10px 40px -10px hsl(16 100% 66% / 0.2);
-    --shadow-glow: 0 0 40px hsl(16 100% 75% / 0.3);
+    --shadow-elegant: 0 10px 40px -10px hsl(217 91% 60% / 0.2);
+    --shadow-glow: 0 0 40px hsl(217 91% 70% / 0.3);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -79,17 +79,17 @@ All colors MUST be HSL.
     --popover: 215 25% 20%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 16 100% 66%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 16 100% 75%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 215 25% 27%;
+    --secondary: 215 30% 25%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 215 25% 27%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 189 95% 42%;
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -99,9 +99,9 @@ All colors MUST be HSL.
     --input: 215 25% 27%;
     --ring: 16 100% 66%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(16 100% 66%), hsl(16 100% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 10% / 0.95), hsl(215 25% 20% / 0.92));
-    --gradient-subtle: linear-gradient(180deg, hsl(215 25% 15%), hsl(215 25% 20%));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 30% 10% / 0.95), hsl(215 30% 20% / 0.92));
+    --gradient-subtle: linear-gradient(180deg, hsl(215 30% 15%), hsl(215 30% 20%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
