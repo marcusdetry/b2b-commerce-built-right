@@ -1,4 +1,13 @@
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -6,19 +15,70 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Supply Flow
-            </h1>
+            <Link to="/">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent cursor-pointer">
+                Supply Flow
+              </h1>
+            </Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Features
-            </a>
-            <a href="#solutions" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-accent/50">
+                    Features
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 bg-background">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/ordering-platform"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Ordering Platform</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Search, request, and order products with ease
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/product-configuration"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Product Configuration</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Configure complex products with 3D visualization
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/business-intelligence"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Business Intelligence</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Data-driven insights and analytics
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            <a href="/#solutions" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Solutions
             </a>
-            <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
           </nav>
