@@ -30,7 +30,7 @@ const Stats = () => {
             Results That Speak for Themselves
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join hundreds of B2B businesses transforming their commerce operations
+            Delight your customers with transformed eCommerce operations.
           </p>
         </div>
         
