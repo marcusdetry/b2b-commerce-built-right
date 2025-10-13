@@ -33,7 +33,7 @@ const Header = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent hover:bg-accent/50">
-                    Features
+                    Solutions
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 bg-background">
@@ -81,9 +81,6 @@ const Header = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <a href="/#solutions" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Solutions
-            </a>
             <Link to="/verticals" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Verticals
             </Link>
