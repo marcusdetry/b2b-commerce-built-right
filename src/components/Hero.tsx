@@ -20,9 +20,11 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <span className="text-white">Built From the Ground Up</span>
+            <br />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Built From the Ground Up for B2B
+              for B2B
             </span>
           </h1>
           
