@@ -105,10 +105,6 @@ const Verticals = () => {
                     </div>
                   ))}
                 </div>
-                
-                <Button variant="default" size="lg">
-                  Learn More About {vertical.title}
-                </Button>
               </div>
             </div>
           </section>
