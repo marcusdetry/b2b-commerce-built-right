@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import ManagementControlCenter from "./pages/ManagementControlCenter";
 import OrderingPlatform from "./pages/OrderingPlatform";
 import ProductConfiguration from "./pages/ProductConfiguration";
 import BusinessIntelligence from "./pages/BusinessIntelligence";
@@ -20,6 +21,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/management-control-center" element={<ManagementControlCenter />} />
           <Route path="/ordering-platform" element={<OrderingPlatform />} />
           <Route path="/product-configuration" element={<ProductConfiguration />} />
           <Route path="/business-intelligence" element={<BusinessIntelligence />} />
