@@ -26,10 +26,6 @@ const CTA = () => {
               Contact Sales
             </Button>
           </div>
-          
-          <p className="text-white/60 text-sm">
-            No credit card required • Free implementation support • Cancel anytime
-          </p>
         </div>
       </div>
     </section>
