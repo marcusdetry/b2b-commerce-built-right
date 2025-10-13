@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import OrderingPlatform from "./pages/OrderingPlatform";
 import ProductConfiguration from "./pages/ProductConfiguration";
 import BusinessIntelligence from "./pages/BusinessIntelligence";
+import Verticals from "./pages/Verticals";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/ordering-platform" element={<OrderingPlatform />} />
           <Route path="/product-configuration" element={<ProductConfiguration />} />
           <Route path="/business-intelligence" element={<BusinessIntelligence />} />
+          <Route path="/verticals" element={<Verticals />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

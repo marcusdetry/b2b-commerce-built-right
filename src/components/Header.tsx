@@ -84,6 +84,9 @@ const Header = () => {
             <a href="/#solutions" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Solutions
             </a>
+            <Link to="/verticals" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Verticals
+            </Link>
             <a href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
