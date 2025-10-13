@@ -58,6 +58,19 @@ const Header = () => {
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
+                            to="/supplier-portal"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Supplier Portal</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Build out and manage your catalogue of products
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
                             to="/ordering-platform"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
@@ -90,19 +103,6 @@ const Header = () => {
                             <div className="text-sm font-medium leading-none">Business Intelligence</div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                               Data-driven insights and analytics
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="/vendor-portal"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Vendor Portal</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Build out and manage your catalogue of products
                             </p>
                           </Link>
                         </NavigationMenuLink>

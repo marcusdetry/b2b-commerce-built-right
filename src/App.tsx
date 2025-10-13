@@ -10,7 +10,7 @@ import OrderingPlatform from "./pages/OrderingPlatform";
 import ProductConfiguration from "./pages/ProductConfiguration";
 import BusinessIntelligence from "./pages/BusinessIntelligence";
 import Verticals from "./pages/Verticals";
-import VendorPortal from "./pages/VendorPortal";
+import SupplierPortal from "./pages/SupplierPortal";
 
 const queryClient = new QueryClient();
 
@@ -27,7 +27,7 @@ const App = () => (
           <Route path="/product-configuration" element={<ProductConfiguration />} />
           <Route path="/business-intelligence" element={<BusinessIntelligence />} />
           <Route path="/verticals" element={<Verticals />} />
-          <Route path="/vendor-portal" element={<VendorPortal />} />
+          <Route path="/supplier-portal" element={<SupplierPortal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

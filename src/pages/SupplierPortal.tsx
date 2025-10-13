@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Package, Settings, BarChart3, Users, FileText, ShoppingCart } from "lucide-react";
 
-const VendorPortal = () => {
+const SupplierPortal = () => {
   const features = [
     {
       icon: Package,
@@ -46,7 +46,7 @@ const VendorPortal = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Vendor Portal
+              Supplier Portal
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Empower your suppliers with a comprehensive portal to build, manage, and optimize their product catalogues. Streamline collaboration and keep your inventory up-to-date.
@@ -63,7 +63,7 @@ const VendorPortal = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Everything Vendors Need to Succeed
+              Everything Suppliers Need to Succeed
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Give your suppliers the tools to manage their products effectively while maintaining control over your platform.
@@ -94,7 +94,7 @@ const VendorPortal = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
-              Why Vendors Love Our Portal
+              Why Suppliers Love Our Portal
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
@@ -131,7 +131,7 @@ const VendorPortal = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Scale your vendor network effortlessly</span>
+                    <span>Scale your supplier network effortlessly</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -149,10 +149,10 @@ const VendorPortal = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Ready to Empower Your Vendors?
+              Ready to Empower Your Suppliers?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              See how the Vendor Portal can transform your supplier relationships and streamline your operations.
+              See how the Supplier Portal can transform your supplier relationships and streamline your operations.
             </p>
             <Button size="lg" variant="hero" className="text-lg">
               Schedule a Demo
@@ -166,4 +166,4 @@ const VendorPortal = () => {
   );
 };
 
-export default VendorPortal;
+export default SupplierPortal;
