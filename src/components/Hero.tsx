@@ -20,15 +20,9 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm mb-6">
-            <span className="text-sm font-semibold text-primary-foreground">Built from the ground up for B2B</span>
-          </div>
-          
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            B2B eCommerce
-            <br />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Without the Pain
+              Built From the Ground Up for B2B
             </span>
           </h1>
           
