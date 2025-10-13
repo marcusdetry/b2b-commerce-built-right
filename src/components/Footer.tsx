@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent mb-4">
-              Supply Flow
+              SupplyFlow
             </h3>
             <p className="text-white/70 text-sm">
               Built from the ground up for B2B eCommerce.
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-white/10 text-center text-sm text-white/60">
-          <p>&copy; {currentYear} Supply Flow. All rights reserved.</p>
+          <p>&copy; {currentYear} SupplyFlow. All rights reserved.</p>
         </div>
       </div>
     </footer>

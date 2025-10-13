@@ -14,7 +14,7 @@ const CTA = () => {
             Ready to Transform Your B2B Commerce?
           </h2>
           <p className="text-xl sm:text-2xl text-white/80 mb-12 leading-relaxed">
-            See how Supply Flow can eliminate order errors, boost sales, and delight your customers. Schedule a personalized demo today.
+            See how SupplyFlow can eliminate order errors, boost sales, and delight your customers. Schedule a personalized demo today.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

@@ -20,7 +20,7 @@ const Solutions = () => {
               Everything Your B2B Business Needs
             </h2>
             <p className="text-xl text-white/80 mb-8 leading-relaxed">
-              Supply Flow understands the unique requirements of B2B commerce. From complex pricing structures to multi-level approvals, we've built features that actually work for wholesale, distribution, and manufacturing businesses.
+              SupplyFlow understands the unique requirements of B2B commerce. From complex pricing structures to multi-level approvals, we've built features that actually work for wholesale, distribution, and manufacturing businesses.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

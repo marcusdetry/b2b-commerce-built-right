@@ -17,7 +17,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent cursor-pointer">
-                Supply Flow
+                SupplyFlow
               </h1>
             </Link>
           </div>
