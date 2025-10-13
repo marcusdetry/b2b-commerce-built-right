@@ -33,9 +33,6 @@ const Hero = () => {
               Schedule Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline-light" size="lg" className="text-lg">
-              Watch Video
-            </Button>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-white/20">
