@@ -20,16 +20,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-white">Built From the Ground Up</span>
-            <br />
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              for B2B
-            </span>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+            Is your eCommerce platform frustrating your customers?
           </h1>
           
           <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-            Eliminate incorrect orders, missed sales, and poor customer experiences with the only platform truly designed for B2B commerce.
+            Eliminate incorrect orders, missed sales, and poor customer experiences with the only platform truly designed for B2B heavy industrial eCommerce.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
