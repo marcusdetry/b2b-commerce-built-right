@@ -7,6 +7,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import logo from "@/assets/logo.jpg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -15,7 +16,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/">
+            <Link to="/" className="flex items-center gap-2">
+              <img 
+                src={logo} 
+                alt="SupplyFlow Logo" 
+                className="h-8 w-8 object-contain"
+              />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent cursor-pointer">
                 SupplyFlow
               </h1>
