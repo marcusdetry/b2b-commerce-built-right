@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import solutionsImage from "@/assets/solutions-image.png";
 
 const Solutions = () => {
   const benefits = [
@@ -39,24 +40,11 @@ const Solutions = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
-              <div className="bg-white/10 rounded-2xl p-6 mb-4 backdrop-blur-sm">
-                <div className="h-3 w-3/4 bg-white/30 rounded mb-3"></div>
-                <div className="h-3 w-1/2 bg-white/20 rounded"></div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
-                  <div className="h-12 w-12 bg-primary/50 rounded-lg mb-3"></div>
-                  <div className="h-2 w-full bg-white/30 rounded mb-2"></div>
-                  <div className="h-2 w-3/4 bg-white/20 rounded"></div>
-                </div>
-                <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
-                  <div className="h-12 w-12 bg-accent/50 rounded-lg mb-3"></div>
-                  <div className="h-2 w-full bg-white/30 rounded mb-2"></div>
-                  <div className="h-2 w-3/4 bg-white/20 rounded"></div>
-                </div>
-              </div>
-            </div>
+            <img 
+              src={solutionsImage} 
+              alt="SupplyFlow Configuration Dashboard" 
+              className="rounded-2xl shadow-2xl border border-white/10"
+            />
           </div>
         </div>
       </div>
