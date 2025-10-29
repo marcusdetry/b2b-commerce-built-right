@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Wrench, Building2, Pickaxe, Ship } from "lucide-react";
+import { Wrench, Building2, Pickaxe, Ship, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Verticals = () => {
@@ -47,6 +47,17 @@ const Verticals = () => {
         "Port-to-port delivery tracking",
         "Regulatory compliance documentation",
         "Emergency parts expediting"
+      ]
+    },
+    {
+      icon: Heart,
+      title: "Healthcare",
+      description: "Streamline medical supply ordering, equipment procurement, and inventory management for healthcare facilities.",
+      benefits: [
+        "Medical-grade compliance tracking",
+        "Automated reordering for critical supplies",
+        "Multi-facility inventory coordination",
+        "Supplier certification and audit management"
       ]
     }
   ];
