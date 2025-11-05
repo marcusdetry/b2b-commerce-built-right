@@ -49,7 +49,7 @@ const SupplierPortal = () => {
               Supplier Portal
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Empower your suppliers with a comprehensive portal to build, manage, and optimize their product catalogues. Streamline collaboration and keep your inventory up-to-date.
+              Empowering manufacturers and distributors with a comprehensive portal to build, manage, and optimize their product catalogues. Use data-driven insights to direct sales efforts towards new opportunities.
             </p>
             <Button size="lg" variant="hero" className="text-lg">
               Request a Demo
