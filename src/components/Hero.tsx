@@ -25,7 +25,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-            Eliminate incorrect orders, missed sales, and poor customer experiences with the only platform truly designed for B2B heavy industrial eCommerce.
+            Eliminate poor customer experiences and missed business opportunities with the only platform designed for B2B industrial eCommerce.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
