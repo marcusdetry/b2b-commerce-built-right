@@ -18,11 +18,11 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button variant="hero" size="lg" className="text-lg px-8">
+            <Button variant="hero" size="lg" className="text-lg px-8 hidden">
               Schedule Your Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline-light" size="lg" className="text-lg px-8">
+            <Button variant="outline-light" size="lg" className="text-lg px-8 hidden">
               Contact Sales
             </Button>
           </div>

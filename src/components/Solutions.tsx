@@ -33,7 +33,7 @@ const Solutions = () => {
               ))}
             </div>
             
-            <Button variant="hero" size="lg" className="text-lg">
+            <Button variant="hero" size="lg" className="text-lg hidden">
               Explore All Features
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

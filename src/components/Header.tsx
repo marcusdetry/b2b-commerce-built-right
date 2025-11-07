@@ -121,10 +121,10 @@ const Header = () => {
           </nav>
           
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
+            <Button variant="ghost" size="sm" className="hidden">
               Login
             </Button>
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="hidden">
               Get Started
             </Button>
           </div>

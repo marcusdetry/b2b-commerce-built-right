@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="hero" size="lg" className="text-lg">
+            <Button variant="hero" size="lg" className="text-lg hidden">
               Schedule Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
