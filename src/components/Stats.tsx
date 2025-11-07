@@ -8,7 +8,7 @@ const Stats = () => {
     {
       value: "35%",
       label: "Revenue Increase",
-      description: "Average growth for clients",
+      description: "identified new sales opportunities",
     },
     {
       value: "48hrs",
