@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -27,7 +26,6 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 const ContactForm = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const form = useForm<ContactFormValues>({
@@ -41,34 +39,31 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = async (data: ContactFormValues) => {
+  const onSubmit = (data: ContactFormValues) => {
     // Additional spam check
     if (data.honeypot) {
       console.log("Spam detected");
       return;
     }
 
-    setIsSubmitting(true);
+    // Create email body
+    const subject = encodeURIComponent("Contact Form Submission from " + data.name);
+    const body = encodeURIComponent(
+      `Name: ${data.name}\n` +
+      `Email: ${data.email}\n` +
+      (data.company ? `Company: ${data.company}\n` : '') +
+      `\nMessage:\n${data.message}`
+    );
     
-    try {
-      // Simulate form submission - replace with actual API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message sent!",
-        description: "Thank you for contacting us. We'll get back to you soon.",
-      });
-      
-      form.reset();
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Open email client
+    window.location.href = `mailto:contact@supplyflow.com?subject=${subject}&body=${body}`;
+    
+    toast({
+      title: "Opening email client...",
+      description: "Your default email application will open with the message pre-filled.",
+    });
+    
+    form.reset();
   };
 
   return (
@@ -167,9 +162,8 @@ const ContactForm = () => {
                   type="submit" 
                   size="lg" 
                   className="w-full"
-                  disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  Send Message
                 </Button>
               </form>
             </Form>
