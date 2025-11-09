@@ -2,14 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
@@ -50,19 +43,19 @@ const ContactForm = () => {
     const subject = encodeURIComponent("Contact Form Submission from " + data.name);
     const body = encodeURIComponent(
       `Name: ${data.name}\n` +
-      `Email: ${data.email}\n` +
-      (data.company ? `Company: ${data.company}\n` : '') +
-      `\nMessage:\n${data.message}`
+        `Email: ${data.email}\n` +
+        (data.company ? `Company: ${data.company}\n` : "") +
+        `\nMessage:\n${data.message}`,
     );
-    
+
     // Open email client
     window.location.href = `mailto:contact@supplyflow.com?subject=${subject}&body=${body}`;
-    
+
     toast({
       title: "Opening email client...",
       description: "Your default email application will open with the message pre-filled.",
     });
-    
+
     form.reset();
   };
 
@@ -147,8 +140,8 @@ const ContactForm = () => {
                     <FormItem>
                       <FormLabel>Message *</FormLabel>
                       <FormControl>
-                        <Textarea 
-                          placeholder="Tell us about your project or ask us anything..."
+                        <Textarea
+                          placeholder="Tell us about how SupplyFlow can help..."
                           className="min-h-[150px]"
                           {...field}
                         />
@@ -158,11 +151,7 @@ const ContactForm = () => {
                   )}
                 />
 
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full"
-                >
+                <Button type="submit" size="lg" className="w-full">
                   Send Message
                 </Button>
               </form>
